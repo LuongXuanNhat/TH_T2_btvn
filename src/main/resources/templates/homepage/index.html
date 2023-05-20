@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <th:block th:replace="layout :: link-css"></th:block>
+</head>
+<body>
+<th:block th:replace="layout :: header"></th:block>
+<div class="top">
+    <h1>Xin chào!</h1>
+    <span>Tôi tên là: <strong>Phạm Quốc Duy</strong></span>
+    <Span>Tôi <strong style="color: blue">21 tuổi</strong> và đến từ <strong style="color: red">Việt Nam</strong></Span>
+    <Span>Hiện tại, tôi đang là sinh viên tại trường <a href="https://www.hutech.edu.vn/">HUTECH</a></Span>
+</div>
+<hr>
+<div class="bottom"><img src="https://file1.hutech.edu.vn/file/editor/homepage/stories/hinh34/logo%20CMYK-01.png" alt=""></div>
+<th:block th:replace="layout :: footer"></th:block>
+</body>
+</html>
+<style>
+    body {
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .bottom img {
+        width: 40%;
+    }
+
+    .top strong {
+        font-size: 20px;
+    }
+</style>
