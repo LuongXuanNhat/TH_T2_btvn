@@ -1,2 +1,23 @@
-package com.example.th_t2_btvn.Controller;public class HomeController {
+package com.example.th_t2_btvn.Controller;
+
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping
+public class HomeController {
+    public HomeController() {
+    }
+
+    @GetMapping
+    public String HomePage() {
+        return "homepage/index";
+    }
+
+
 }
