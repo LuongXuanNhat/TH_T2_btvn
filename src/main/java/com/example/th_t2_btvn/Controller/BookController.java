@@ -62,6 +62,7 @@ public class BookController {
     public String EditForm(@PathVariable("id") Long id, Model model) {
         Book book = bookService.get(id);
         if (book != null) {
+            model.addAttribute("categories", categoryService.getAllCategories());
             model.addAttribute("book", book);
             return "book/edit";
         } else {
